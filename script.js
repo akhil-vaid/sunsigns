@@ -195,6 +195,8 @@ const starSigns = [
 
 ];
 
+
+
 /*const starSignsList = document.getElementById("starSignsList");
 const imagePath = "";
 
@@ -211,7 +213,7 @@ const imagePath = "";
 
 
 })*/
-const starSignsList = document.getElementById("starSignsList");
+/*const starSignsList = document.getElementById("starSignsList");
 const imagePath = "";
 
 starSigns.forEach(sign => {
@@ -227,6 +229,43 @@ starSigns.forEach(sign => {
 
     listItem.appendChild(imgItem);
     listItem.appendChild(datesElement);
+
+    listItem.addEventListener("click", () => openDetailsWindow(sign));
+    starSignsList.appendChild(listItem);
+});*/
+const starSignsList = document.getElementById("starSignsList");
+const imagePath = "";
+
+// Define an array of random fortunes
+const fortunes = [
+  "Good fortune is coming your way!",
+  "Be cautious today, luck may not be on your side.",
+  "Expect unexpected blessings.",
+  "Your creativity will lead to success.",
+  "Take risks, they will pay off handsomely.",
+  "Stay focused and you'll achieve your goals."
+];
+
+starSigns.forEach(sign => {
+    const listItem = document.createElement("div");
+    listItem.className = "starSignItem";
+
+    const imgItem = document.createElement("img");
+    imgItem.src = `${imagePath}${sign.image}`;
+
+    const datesElement = document.createElement("div");
+    datesElement.textContent = `${sign.dates}`;
+    datesElement.className = "dates";
+
+    // Generate a random fortune message
+    const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    const fortuneElement = document.createElement("div");
+    fortuneElement.textContent = randomFortune;
+    fortuneElement.className = "fortune";
+
+    listItem.appendChild(imgItem);
+    listItem.appendChild(datesElement);
+    /*listItem.appendChild(fortuneElement);*/
 
     listItem.addEventListener("click", () => openDetailsWindow(sign));
     starSignsList.appendChild(listItem);
@@ -275,6 +314,7 @@ function openDetailsWindow(sign) {
                 <p id="dates"><strong>Dates:</strong> ${sign.dates}</p>
                 <p id="traits"><strong>Traits:</strong> ${sign.traits.join(", ")}</p>
                 <p id="description"><strong>Description:</strong> ${sign.description}</p>
+                <p id="fortunes"><strong>Todays Fortune:</strong>${sign.fortune}</p>
             </body>
         </html>
     `;

@@ -1,5 +1,5 @@
 
-const starSigns = [
+var starSigns = [
 
     {
 
@@ -237,7 +237,7 @@ const starSignsList = document.getElementById("starSignsList");
 const imagePath = "";
 
 // Define an array of random fortunes
-const fortunes = [
+var fortunes = [
   "Good fortune is coming your way!",
   "Be cautious today, luck may not be on your side.",
   "Expect unexpected blessings.",

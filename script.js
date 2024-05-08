@@ -259,9 +259,11 @@ starSigns.forEach(sign => {
 
     // Generate a random fortune message
     const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    /*
     const fortuneElement = document.createElement("div");
     fortuneElement.textContent = randomFortune;
-    fortuneElement.className = "fortune";
+    fortuneElement.className = "fortune";*/
+    sign.fortune = randomFortune;
 
     listItem.appendChild(imgItem);
     listItem.appendChild(datesElement);
@@ -310,11 +312,11 @@ function openDetailsWindow(sign) {
             <body>
                 <h2 id="signname">${sign.name}</h2>
 				<img src=${imagePath}${sign.image} />
-                <p id="element"><strong>Element:</strong> ${sign.element}</p>
-                <p id="dates"><strong>Dates:</strong> ${sign.dates}</p>
-                <p id="traits"><strong>Traits:</strong> ${sign.traits.join(", ")}</p>
-                <p id="description"><strong>Description:</strong> ${sign.description}</p>
-                <p id="fortunes"><strong>Todays Fortune:</strong>${sign.fortune}</p>
+                <p id="element"><strong>Element : </strong> ${sign.element}</p>
+                <p id="dates"><strong>Dates : </strong> ${sign.dates}</p>
+                <p id="traits"><strong>Traits : </strong> ${sign.traits.join(", ")}</p>
+                <p id="description"><strong>Description : </strong> ${sign.description}</p>
+                <p id="fortunes"><strong>Todays Fortune : </strong>${sign.fortune}</p>
             </body>
         </html>
     `;

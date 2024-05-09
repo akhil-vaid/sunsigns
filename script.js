@@ -199,6 +199,7 @@ const starSignsList = document.getElementById("starSignsList");
 const imagePath = "";
 
 // Defined is an array of random fortunes
+
 var fortunes = [
   "Good fortune is coming your way!",
   "Be cautious today, luck may not be on your side.",

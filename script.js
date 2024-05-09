@@ -195,48 +195,10 @@ var starSigns = [
 
 ];
 
-
-
-/*const starSignsList = document.getElementById("starSignsList");
-const imagePath = "";
-
- starSigns.forEach(sign => {
-    const listItem = document.createElement("div");
-    listItem.className = "starSignItem";
-
-    const imgItem = document.createElement("img");
-    imgItem.src = `${imagePath}${sign.image}`;
-
-    listItem.appendChild(imgItem);
-    listItem.addEventListener("click", () => openDetailsWindow(sign));
-    starSignsList.appendChild(listItem);
-
-
-})*/
-/*const starSignsList = document.getElementById("starSignsList");
-const imagePath = "";
-
-starSigns.forEach(sign => {
-    const listItem = document.createElement("div");
-    listItem.className = "starSignItem";
-
-    const imgItem = document.createElement("img");
-    imgItem.src = `${imagePath}${sign.image}`;
-
-    const datesElement = document.createElement("div");
-    datesElement.textContent = `${sign.dates}`;
-    datesElement.className = "dates";
-
-    listItem.appendChild(imgItem);
-    listItem.appendChild(datesElement);
-
-    listItem.addEventListener("click", () => openDetailsWindow(sign));
-    starSignsList.appendChild(listItem);
-});*/
 const starSignsList = document.getElementById("starSignsList");
 const imagePath = "";
 
-// Define an array of random fortunes
+// Defined is an array of random fortunes
 var fortunes = [
   "Good fortune is coming your way!",
   "Be cautious today, luck may not be on your side.",
@@ -259,15 +221,12 @@ starSigns.forEach(sign => {
 
     // Generate a random fortune message
     const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    /*
-    const fortuneElement = document.createElement("div");
-    fortuneElement.textContent = randomFortune;
-    fortuneElement.className = "fortune";*/
+    
     sign.fortune = randomFortune;
 
     listItem.appendChild(imgItem);
     listItem.appendChild(datesElement);
-    /*listItem.appendChild(fortuneElement);*/
+    
 
     listItem.addEventListener("click", () => openDetailsWindow(sign));
     starSignsList.appendChild(listItem);

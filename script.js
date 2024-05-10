@@ -271,6 +271,10 @@ function openDetailsWindow(sign) {
                         background-position: 0% 50%;
                     }
                 }
+                ul{display:flex; justify-content:space-evenly; margin-top: 30px; font-size:20px;}
+                ul li{list-style-type:none; }
+                a{color:white; text-decoration:none;}
+                a:hover{text-decoration:underline;}
                 h2{text-align:center;margin:50px 0 0 0; font-size:30px;}
                 img{display:block;margin: 30px auto 0 auto;}
                 p{text-align:center;}
@@ -278,6 +282,14 @@ function openDetailsWindow(sign) {
                 </style>
             </head>
             <body>
+            <nav>
+                 <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="#">Links</a></li>
+                </ul>
+            </nav>
                 <h2 id="signname">${sign.name}</h2>
 				<img src=${imagePath}${sign.image} />
                 <p id="element"><strong>Element : </strong> ${sign.element}</p>

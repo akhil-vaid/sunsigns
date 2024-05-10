@@ -1,4 +1,4 @@
-
+// Define an array of star signs details
 var starSigns = [
 
     {
@@ -194,12 +194,13 @@ var starSigns = [
         }
 
 ];
-
+// Get the DOM element with the id "starSignsList"
 const starSignsList = document.getElementById("starSignsList");
+// Define an empty string for the image path
 const imagePath = "";
 
-// Defined is an array of random fortunes
 
+// Define an array of random fortunes
 var fortunes = [
   "Good fortune is coming your way!",
   "Be cautious today, luck may not be on your side.",
@@ -208,36 +209,43 @@ var fortunes = [
   "Take risks, they will pay off handsomely.",
   "Stay focused and you'll achieve your goals."
 ];
-
+// Iterate over each element in the 'starSigns' array
 starSigns.forEach(sign => {
     const listItem = document.createElement("div");
+    // Set the class name of the div to 'starSignItem'
     listItem.className = "starSignItem";
-
+    // Create a new <img> element for the star sign image
     const imgItem = document.createElement("img");
+    // Set the src attribute of the image using the imagePath and sign.image
     imgItem.src = `${imagePath}${sign.image}`;
-
+    // Create a new <div> element for the star sign dates
     const datesElement = document.createElement("div");
+    // Set the text content of the dates element to the sign's dates
     datesElement.textContent = `${sign.dates}`;
+    // Set the class name of the div to 'dates'
     datesElement.className = "dates";
 
-    // Generate a random fortune message
+    // Generate a random fortune message from the 'fortunes' array
     const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    
+    // Add the random fortune to the sign object
     sign.fortune = randomFortune;
-
+    // Append the image and dates elements to the listItem div
     listItem.appendChild(imgItem);
     listItem.appendChild(datesElement);
     
-
+    // Add a click event listener to the listItem to open the details window
     listItem.addEventListener("click", () => openDetailsWindow(sign));
+    // Append the listItem to the starSignsList
     starSignsList.appendChild(listItem);
 });
 
 
- 
+ // Function to open a new window with details of the sign
 function openDetailsWindow(sign) {
+    // Open a new window with the sign details
     const detailsWindow = window.open( sign, target="_blank");
- 
+
+    // HTML content for the details window
     const html = `
         <html>
             <head>
@@ -280,7 +288,7 @@ function openDetailsWindow(sign) {
             </body>
         </html>
     `;
- 
+    // Write the HTML content to the new window
     detailsWindow.document.write(html);
 }
  

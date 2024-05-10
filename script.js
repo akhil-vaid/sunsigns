@@ -13,7 +13,7 @@ var starSigns = [
 
         traits: ["Energetic", "Determined", "Confident"],
 
-        description: "lorem ipsum text"
+        description: "Aries loves to be number one."
 
         },
 
@@ -29,7 +29,7 @@ var starSigns = [
 
         traits: ["Reliable", "Patient", "Practical"],
 
-        description: "lorem ipsum text"
+        description: "Taureans enjoy relaxing in serene"
 
         },
 
@@ -45,7 +45,7 @@ var starSigns = [
 
         traits: ["Adaptable", "Versatile", "Curious"],
 
-        description: "lorem ipsum text"
+        description: "Spontaneous, playful, and adorably erratic"
 
         },
 
@@ -61,7 +61,7 @@ var starSigns = [
 
         traits: ["Intuition", "Empathy", "Wisdom"],
 
-        description: "lorem ipsum text"
+        description: "Cancers are highly intuitive and their psychic abilities"
 
         },
 
@@ -77,7 +77,7 @@ var starSigns = [
 
         traits: ["Leadership", "Integrity", "Boldness"],
 
-        description: "lorem ipsum text"
+        description: "Passionate, loyal, and infamously dramatic"
 
         },
 
@@ -93,7 +93,7 @@ var starSigns = [
 
         traits: ["Pragmatism", "Resourcefulness", "Mind-body awareness"],
 
-        description: "lorem ipsum text"
+        description: "Virgos are logical, practical, and systematic in their approach to life"
 
         },
 
@@ -109,7 +109,7 @@ var starSigns = [
 
         traits: ["Rationality", "Diplomacy", "Good aesthetic tastes"],
 
-        description: "lorem ipsum text"
+        description: "Balance, harmony, and justice define Libra energy"
 
         },
 
@@ -125,7 +125,7 @@ var starSigns = [
 
         traits: ["Magnetism", "Stoicism", "Honesty"],
 
-        description: "lorem ipsum text"
+        description: "Cultivating powerful wisdom through both the physical and unseen realms"
 
         },
 
@@ -141,7 +141,7 @@ var starSigns = [
 
         traits: ["Confidence", "Spontaneity", "Optimism"],
 
-        description: "lorem ipsum text"
+        description: "Sagittarians are always on a quest for knowledge"
 
         },
 
@@ -157,7 +157,7 @@ var starSigns = [
 
         traits: ["Confidence", "Spontaneity", "Optimism"],
 
-        description:"lorem ipsum text"
+        description:"Capricorn is climbing the mountain straight to the top"
 
         },
 
@@ -173,7 +173,7 @@ var starSigns = [
 
         traits: ["Selflessness", "Objectivity", "Teamwork"],
 
-        description:"lorem ipsum text"
+        description:"Aquarius is dedicated to making the world a better place"
 
         },
 
@@ -189,7 +189,7 @@ var starSigns = [
 
         traits: ["Creativity", "Compassion", "Storytelling"],
 
-        description:"lorem ipsum text"
+        description:"Pisces is the most intuitive, sensitive, and empathetic sign of the entire zodiac"
 
         }
 

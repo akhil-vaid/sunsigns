@@ -7,4 +7,6 @@ Data encapsulation technique has been used over this project and javascript is t
 ![img1](https://github.com/akhil-vaid/sunsigns/assets/161016491/9e6278d2-2974-47b6-8654-149e2fe4262b)  
 
 
-![img2](https://github.com/akhil-vaid/sunsigns/assets/161016491/e6fefa2b-0ac2-4c46-8d7b-05da1154acb7)
+![img2](https://github.com/akhil-vaid/sunsigns/assets/161016491/e6fefa2b-0ac2-4c46-8d7b-05da1154acb7)  
+
+Thanks to Westminster Adult Education Services, Code Institute and Special thanks to Mr. Komal Karir our instructor and coach!  

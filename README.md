@@ -4,3 +4,4 @@ Welcome to my repository, here i have created a small html, css and javascript p
 
 Data encapsulation technique has been used over this project and javascript is the main technology used for the operations.  
 
+![img1](https://github.com/akhil-vaid/sunsigns/assets/161016491/9e6278d2-2974-47b6-8654-149e2fe4262b)

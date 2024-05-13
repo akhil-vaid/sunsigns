@@ -5,7 +5,7 @@ var starSigns = [
 
         name: "Aries",
 
-	image:"images/aries.jpg",
+	    image:"images/aries.jpg",
 
         element: "Fire",
 
